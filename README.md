@@ -47,9 +47,12 @@ conda activate pet_pals_env or source activate pet_pals_env
 * Install the remaining libraries into your new environment.
 
 ```sh
-pip install gunicorn
+pip install gunicorn (gunicorn is a high performance web server to run Flask app in a production environment)
 pip install flask
 pip install flask-sqlalchemy
+pip install pandas
+Pip install psycopg2   (only install if using Postgres)
+
 ```
 
 * You can test the application by running the following in your command line.
