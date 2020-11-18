@@ -38,20 +38,16 @@ conda create -n pet_pals_env python=3.6
 * Make sure to activate this new environment before proceeding.
 
 ```sh
-conda activate pet_pals_env
+conda activate pet_pals_env or source activate pet_pals_env
+**Note** If one command above doesn't work try the next
+
 ```
-
-* **Note** if you run into issues try the following command instead.
-
-```sh
-source activate pet_pals_env
-```
-
-* Next, we install `gunicorn` with `pip install gunicorn`. Explain that gunicorn is a high performance web server that can run their Flask app in a production environment.
+* Install the following using PIP (gunicorn is a high performance web server that can run their Flask app in a production environment)
 
 * Install the remaining libraries into your new environment.
 
 ```sh
+pip install gunicorn
 pip install flask
 pip install flask-sqlalchemy
 ```
@@ -112,20 +108,17 @@ web: gunicorn app:app
 
 * After creating a new app on Heroku, navigate to `Resources`:
 
-  ![Images/deploy01.png](Images/deploy01.png)
-
+  
   * Under `Add-ons`, search `Heroku Postgres`. Make sure to use the free version then click Provision.
 
-  ![provision database](Images/provision_database.png)
-
+ 
 * Once `Heroku Postgres` is listed on click on it.
 
 * From the new page, navigate to settings and click on `View Credentials`.
 
 * The connection string to the database should now be available in the **URI** field:
 
-  ![Images/database_connection.png](Images/database_connection.png)
-
+ 
 * Heroku will automatically assign this URI string to the `DATABASE_URL` environment variable that is used within `app.py`. The code that is already in `app.py` will be able to use that environment variable to connect to the Heroku database.
 
   ```python
