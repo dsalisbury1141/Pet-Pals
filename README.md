@@ -1,7 +1,8 @@
-# Pet-Pals
+# Pet-Pals is the instruction how to deploy a fully function website on Heroku see "How to run my code" below
+
 ## Heroku Deployment
 
-### Prerequisites
+### Instructions and Prerequisites
 
 * Sign up for a [Heroku](https://www.heroku.com) account.
 
@@ -18,7 +19,7 @@
 
 #### Part 1: Create a New Repo
 
-* **Files:** [Pet Pals app](./Starter)
+* **Files:** [see repository above)
 
 * From Github create a new repo called **Pet_Pals** and clone it to your desktop.
 
@@ -141,3 +142,12 @@ python initdb.py
 ```
 
 * Your database is now initialized and can be connected to your web app and even vie
+
+
+How to Run my Code
+1. Download this repository
+2. Follow the instructions above
+3. NOTE: Each operating system may not nun seamless.. There may be slight changes that you need to take before it will run, be patient and keep trying, it took me 7 times over a couple weeks but I did it.  
+
+*** My plan is to review these instructions and make updates based on my Window computer.  I hope to make the instructions more clear, these were provided  by my instructor.. Not the best but good to start. 
+
