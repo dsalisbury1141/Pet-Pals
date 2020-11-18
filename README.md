@@ -1,4 +1,6 @@
-# Pet-Pals is the instruction how to deploy a fully function website on Heroku see "How to run my code" below
+# Pet-Pals.. 
+This repository provide instructions how to deploy a fully function website on Heroku see "How to run my code" below
+I did not create these instructions but will be back soon to update and improve. 
 
 ## Heroku Deployment
 
